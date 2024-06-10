@@ -67,6 +67,6 @@ func main() {
 	r.HandleFunc("/health", healthHandle)
 	r.HandleFunc("/", routeHandle)
 	r.HandleFunc("/details", detailsHandle)
-	log.Println("server has startedg")
+	log.Println("server has started")
 	log.Fatal(http.ListenAndServe(":80", r))
 }

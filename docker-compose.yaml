@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: go-app-normal:latest
+    ports:
+      - "8080:80"
+    restart: always
+    networks:
+      - web
+
+
+networks:
+  web: 
+    
